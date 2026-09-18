@@ -8,7 +8,7 @@ cask "brainselector" do
   homepage "https://github.com/jniedzie/brainselector"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "BrainSelector.app"
   binary "#{appdir}/BrainSelector.app/Contents/Resources/tui/brainselector", target: "brainselector"
